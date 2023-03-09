@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../assets/icons/logo.svg';
+import logo from '../assets/icons/coinwire1.png';
 
 import './Navbar.scss';
 
