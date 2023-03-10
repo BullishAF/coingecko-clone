@@ -8,9 +8,7 @@ import {
   selectMarketCap,
   selectMarketCapPercentage,
   selectVol24h,
-  selectBtcDominance,
-  selectEthDominance,
-  selectEthGas,
+ 
 } from '../redux/reducers/globals';
 
 import './Header.scss';
@@ -21,9 +19,7 @@ export default function Header() {
   const marketCap = useSelector(selectMarketCap);
   const marketCapPercentage = useSelector(selectMarketCapPercentage);
   const vol24h = useSelector(selectVol24h);
-  const btcDominance = useSelector(selectBtcDominance);
-  const ethDominance = useSelector(selectEthDominance);
-  const ethGas = useSelector(selectEthGas);
+
 
   let marketCapPercentageColorClass = '';
   let marketCapPercentageClasses = '';
@@ -60,20 +56,7 @@ export default function Header() {
         <span className="text-info">
           {isNaN(vol24h) ? vol24h : formatDollar(vol24h, false)}
         </span>
-      </span>
-      <span className="d-inline-block mr-3">
-        <b>Dominance: </b>
-        <span>
-          BTC {btcDominance}% ETH {ethDominance}%
         </span>
-      </span>
-      <span className="d-inline-block mr-3">
-        <b className="mr-1">
-          <i className="fas fa-gas-pump d-inline-block mr-1" />
-          ETH Gas:
-        </b>
-        <span>{ethGas} gwei</span>
-      </span>
-    </div>
-  );
+        </div>
+        );
 }

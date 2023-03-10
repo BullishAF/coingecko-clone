@@ -8,14 +8,14 @@ import './Main.scss';
 export default function Main() {
   useLayoutEffect(() => {
     document.title =
-      'CoinGecko Clone: Cryptocurrency Prices and Market Capitalization';
+     'Crypto Prices, News & Features';
   }, []);
 
   return (
     <PageWrapper>
       <div id="main">
         <div className="text-center pt-5 pb-3 title">
-          Cryptocurrency Prices by Market Cap
+          Crypto Price Feed
         </div>
         <div className="w-100 px-5">
           <FilterButtons />

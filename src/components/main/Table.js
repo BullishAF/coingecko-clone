@@ -153,7 +153,6 @@ export default function Table() {
                 />
               </div>
             </td>
-            <td className="header text-center">Last 7 Days</td>
           </tr>
         </thead>
         <tbody>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import logo from '../assets/icons/coinwire1.png';
 
 import './Navbar.scss';
 
@@ -12,12 +11,7 @@ export default function Navbar() {
       className="navbar navbar-expand-lg navbar-light border-bottom py-3 px-5"
     >
       <Link to="/" className="navbar-brand">
-        <img
-          src={logo}
-          width="140"
-          className="d-inline-block align-top"
-          alt="logo"
-        />
+        🌐 coinwire.us
       </Link>
 
       <button
@@ -40,23 +34,13 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              Markets
+            <a href="/news" className="nav-link">
+              News
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              DeFi
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              NFT
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              Portfolio
+            <a href="/featured" className="nav-link">
+              Featured Products
             </a>
           </li>
           <li className="nav-item">
@@ -65,31 +49,16 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              News
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              Tools
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="/" className="nav-link disabled">
+            <a href="/resources" className="nav-link">
               Resources
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" className="nav-link disabled">
+            <a href="/learn" className="nav-link">
               Learn
             </a>
           </li>
-          <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              Community
-            </a>
-          </li>
-        </ul>
+         </ul>
       </div>
     </nav>
   );
