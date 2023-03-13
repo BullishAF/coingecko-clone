@@ -43,7 +43,7 @@ function App() {
         <Route path="/coins/:coin_id">
           <Detail />
         </Route>
-        <Route path="/*">
+        <Route path="/news">
           <Main />
         </Route>
       </Switch>
