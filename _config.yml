@@ -3,7 +3,7 @@ title: Coingecko Clone
 timezone: UTC
 collections:
   posts:
-    title: Posts
+    title: Featured
     output: true
   uploads:
     title: Uploads
