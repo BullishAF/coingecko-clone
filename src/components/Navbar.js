@@ -44,11 +44,6 @@ export default function Navbar() {
             </a>
           </li>
           <li className="nav-item">
-            <a href="/" className="nav-link disabled">
-              Exchanges
-            </a>
-          </li>
-          <li className="nav-item">
             <a href="/resources" className="nav-link">
               Resources
             </a>
